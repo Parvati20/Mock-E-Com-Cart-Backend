@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log(" MongoDB connected"))
   .catch(err => console.log(" MongoDB connection error:", err));
 
-app.get("/", (req, res) => res.send("Backend working fine ✅"));
+app.get("/", (req, res) => res.send("Backend working fine "));
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 
